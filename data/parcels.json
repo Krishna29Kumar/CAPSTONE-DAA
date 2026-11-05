@@ -1,0 +1,137 @@
+[
+  {
+    "parcel_id": "P101",
+    "customer_name": "Aarav Sharma",
+    "delivery_location": "Cyber City",
+    "weight": 5,
+    "priority": 9,
+    "delivery_deadline": 2,
+    "value": 1200.0
+  },
+  {
+    "parcel_id": "P102",
+    "customer_name": "Priya Verma",
+    "delivery_location": "Sector 14",
+    "weight": 8,
+    "priority": 7,
+    "delivery_deadline": 3,
+    "value": 850.0
+  },
+  {
+    "parcel_id": "P103",
+    "customer_name": "Rohan Gupta",
+    "delivery_location": "MG Road",
+    "weight": 12,
+    "priority": 8,
+    "delivery_deadline": 2,
+    "value": 1500.0
+  },
+  {
+    "parcel_id": "P104",
+    "customer_name": "Sneha Patel",
+    "delivery_location": "Golf Course Road",
+    "weight": 4,
+    "priority": 10,
+    "delivery_deadline": 1,
+    "value": 1900.0
+  },
+  {
+    "parcel_id": "P105",
+    "customer_name": "Vikram Malhotra",
+    "delivery_location": "Sohna Road",
+    "weight": 15,
+    "priority": 6,
+    "delivery_deadline": 5,
+    "value": 950.0
+  },
+  {
+    "parcel_id": "P106",
+    "customer_name": "Ananya Iyer",
+    "delivery_location": "Subhash Chowk",
+    "weight": 7,
+    "priority": 8,
+    "delivery_deadline": 4,
+    "value": 1100.0
+  },
+  {
+    "parcel_id": "P107",
+    "customer_name": "Kabir Singh",
+    "delivery_location": "Rajiv Chowk",
+    "weight": 3,
+    "priority": 9,
+    "delivery_deadline": 2,
+    "value": 1400.0
+  },
+  {
+    "parcel_id": "P108",
+    "customer_name": "Neha Reddy",
+    "delivery_location": "Old Railway Station",
+    "weight": 10,
+    "priority": 5,
+    "delivery_deadline": 6,
+    "value": 750.0
+  },
+  {
+    "parcel_id": "P109",
+    "customer_name": "Aditya Nair",
+    "delivery_location": "Palam Vihar",
+    "weight": 6,
+    "priority": 7,
+    "delivery_deadline": 3,
+    "value": 980.0
+  },
+  {
+    "parcel_id": "P110",
+    "customer_name": "Pooja Joshi",
+    "delivery_location": "Udyog Vihar",
+    "weight": 9,
+    "priority": 8,
+    "delivery_deadline": 3,
+    "value": 1300.0
+  },
+  {
+    "parcel_id": "P111",
+    "customer_name": "Manish Kumar",
+    "delivery_location": "Cyber City",
+    "weight": 2,
+    "priority": 10,
+    "delivery_deadline": 1,
+    "value": 1750.0
+  },
+  {
+    "parcel_id": "P112",
+    "customer_name": "Divya Kapoor",
+    "delivery_location": "Sector 14",
+    "weight": 11,
+    "priority": 4,
+    "delivery_deadline": 8,
+    "value": 600.0
+  },
+  {
+    "parcel_id": "P113",
+    "customer_name": "Suresh Menon",
+    "delivery_location": "Golf Course Road",
+    "weight": 5,
+    "priority": 8,
+    "delivery_deadline": 3,
+    "value": 1250.0
+  },
+  {
+    "parcel_id": "P114",
+    "customer_name": "Meera Das",
+    "delivery_location": "Sohna Road",
+    "weight": 14,
+    "priority": 6,
+    "delivery_deadline": 6,
+    "value": 880.0
+  },
+  {
+    "parcel_id": "P115",
+    "customer_name": "Karan Johar",
+    "delivery_location": "Rajiv Chowk",
+    "weight": 4,
+    "priority": 9,
+    "delivery_deadline": 2,
+    "value": 1350.0
+  }
+]
