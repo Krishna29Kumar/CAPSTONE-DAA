@@ -329,3 +329,141 @@ python -m unittest discover tests
 ## 14. Conclusion
 
 The **Mini-Courier Planner** successfully models and solves the modern courier dispatch problem. By combining Merge Sort for deterministic prioritization, 0/1 Knapsack Dynamic Programming for vehicle packing, Dijkstra's algorithm for accurate shortest road paths, and Nearest Neighbor TSP for tour scheduling, the system optimizes both logistics revenue and delivery efficiency. Empirical benchmarking across small, medium, and large datasets demonstrates strong adherence to theoretical complexity models, providing an exemplary foundation for academic study and practical logistics software engineering.
+
+
+
+CODE TO RUN
+source venv/bin/activate
+python main.py --demo
+python main.py
+streamlit run app.py
+python -m unittest discover tests -v
+python -m algorithms.performance
+
+
+
+Mini-Courier Planner: Algorithmic Logistics Optimization Engine
+
+Design and Analysis of Algorithms (ETCCDA302) — Capstone Project
+Department of Computer Science & Engineering, K.R. Mangalam University
+
+Executive Overview & Verification Status
+
+The Mini-Courier Planner has been developed, verified, benchmarked, and committed. All four core algorithms were implemented manually from mathematical first principles in Python 3 without high-level library shortcuts (no built-in sort() for prioritization, no NetworkX shortest-path routines, no external TSP solvers).
+
+Reports & Visualizations: Charts (.png) and tabular CSV data (.csv) generated and saved into reports/ and screenshots/.
+User Interfaces: Both an Interactive Streamlit Web Dashboard (app.py) and a Full-Featured Terminal CLI / Demo Runner (main.py) are included.
+1. Project Directory Structure
+CAPSTONE/
+├── app.py                             # Interactive Streamlit Web UI (9 modules)
+├── main.py                            # Interactive CLI menu & automated demo runner
+├── requirements.txt                   # Dependency specifications (Streamlit, Matplotlib, Pandas, NetworkX)
+├── README.md                          # Comprehensive project documentation
+├── CAPSTONE_REPORT.md                 # 5-Phase academic capstone project report
+├── VIVA_QUESTIONS.md                  # 35 Viva Voce questions & beginner-friendly answers
+├── .gitignore                         # Git ignore rules for venv, caches, and OS files
+│
+├── algorithms/                        # Manual algorithmic implementations
+│   ├── __init__.py
+│   ├── sorting.py                     # Manual Merge Sort (Priority desc, Deadline asc, ID tie-breaker)
+│   ├── knapsack.py                    # Manual 0/1 Knapsack DP with full 2D table backtracking
+│   ├── dijkstra.py                    # Manual Dijkstra Shortest Path with binary min-heap (heapq)
+│   ├── tsp.py                         # Manual Nearest Neighbor TSP tour planner
+│   └── performance.py                 # Empirical benchmarking suite (time.perf_counter)
+│
+├── models/                            # Domain data models
+│   ├── __init__.py
+│   ├── parcel.py                      # Parcel dataclass, validation & serialization
+│   └── delivery_graph.py              # Adjacency-list DeliveryGraph data structure
+│
+├── data/                              # Persistent JSON sample datasets
+│   ├── parcels.json                   # 15 realistic parcels with varied weights, deadlines & values
+│   └── graph.json                     # 11-node Gurugram NCR delivery network graph
+│
+├── visualization/                     # Plotting and rendering engines
+│   ├── __init__.py
+│   ├── graph_visualizer.py            # Matplotlib delivery tour and graph visualizer
+│   └── performance_charts.py          # Grouped bar chart, scaling curves & knapsack sensitivity
+│
+├── tests/                             # Automated test suite (28 test cases)
+│   ├── __init__.py
+│   ├── test_sorting.py                # Empty, single, multi, tie-breakers, large dataset
+│   ├── test_knapsack.py               # Zero capacity, oversized parcels, optimal DP verification
+│   ├── test_dijkstra.py               # Shortest paths, multiple routes, disconnected nodes
+│   ├── test_tsp.py                    # Closed-loop tour, duplicate locations, unreachable nodes
+│   └── test_integration.py            # End-to-end multi-algorithm pipeline tests
+│
+├── reports/                           # Empirical benchmarks & generated plots
+│   ├── performance_results.csv        # Actual CPU execution measurements
+│   ├── performance_runtime_comparison.png  # Logarithmic grouped bar chart
+│   ├── performance_scaling_curves.png      # Input size vs execution time curves
+│   ├── knapsack_capacity_impact.png        # Pseudo-polynomial O(n·W) linear growth curve
+│   └── delivery_route_visualization.png    # Route map with directional arrows
+│
+└── screenshots/                       # Exported visualization figures ready for report submission
+    ├── delivery_route_visualization.png
+    ├── knapsack_capacity_impact.png
+    ├── performance_runtime_comparison.png
+    └── performance_scaling_curves.png
+
+3. How to Run the Project
+Step 1: Activate Virtual Environment
+bash
+cd /Users/krishnakumar/Documents/CAPSTONE
+source venv/bin/activate
+
+(Dependencies are already installed in venv/: streamlit, matplotlib, pandas, networkx)
+
+Step 2: Run Automated End-to-End Demo (CLI)
+
+Executes all 4 algorithms sequentially on Gurugram NCR delivery data and prints step-by-step results:
+
+bash
+python main.py --demo
+Step 3: Run Interactive Terminal Application
+
+Provides an interactive menu for adding parcels, setting custom vehicle capacities, and calculating custom routes:
+
+bash
+python main.py
+Step 4: Launch the Streamlit Web Application
+
+Launches a responsive browser interface featuring all 9 required pages:
+
+bash
+streamlit run app.py
+
+Open http://localhost:8501 in your browser.
+
+Step 5: Run Automated Unit Tests
+bash
+python -m unittest discover tests -v
+
+(Executes all 28 unit and edge-case tests)
+
+Step 6: Re-run Benchmarking Suite
+
+Regenerates CSV tables and PNG charts:
+
+bash
+python -m algorithms.performance
+4. Capturing Evidence & Screenshots for Submission
+The script has already saved high-resolution Matplotlib charts directly into reports/ and screenshots/:
+delivery_route_visualization.png: Visual road network with numbered delivery stops and red directional tour arrows.
+performance_runtime_comparison.png: Grouped logarithmic bar chart comparing all algorithms.
+performance_scaling_curves.png: Input size vs runtime growth curves.
+knapsack_capacity_impact.png: Proof of pseudo-polynomial growth.
+To capture live web UI screenshots:
+Run streamlit run app.py
+Use Cmd + Shift + 4 (on macOS) to capture each tab: Dashboard, Parcel Prioritization, Packing Optimization, Delivery Graph, Shortest Paths, Route Optimization, and Performance Analysis.
+5. How to Upload the Project to GitHub
+
+A clean Git repository has already been initialized and committed locally. To push it to your GitHub profile:
+
+bash
+# 1. Create a new empty repository on github.com (e.g. named 'mini-courier-planner')
+# 2. Add your GitHub remote URL
+git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/mini-courier-planner.git
+# 3. Rename branch to main (if preferred) and push
+git branch -M main
+git push -u origin main

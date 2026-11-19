@@ -141,3 +141,4 @@ def compute_all_pairs_shortest_paths(
     for node in graph.get_nodes():
         all_pairs[node] = dijkstra_shortest_paths(graph, node)
     return all_pairs
+

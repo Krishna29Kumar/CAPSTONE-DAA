@@ -103,3 +103,4 @@ class DeliveryGraph:
             g.add_edge(edge["from"], edge["to"], float(edge["distance"]))
 
         return g
+

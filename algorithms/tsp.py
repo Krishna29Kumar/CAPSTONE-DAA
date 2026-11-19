@@ -212,3 +212,4 @@ def solve_tsp_nearest_neighbor(
         execution_time=elapsed,
         is_closed_tour=is_closed_tour
     )
+

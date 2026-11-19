@@ -162,3 +162,4 @@ def plot_delivery_network(
         fig.savefig(save_path, dpi=300, bbox_inches="tight")
 
     return fig
+

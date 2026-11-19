@@ -133,3 +133,4 @@ def knapsack_01(parcels: List[Parcel], capacity: int) -> KnapsackResult:
         capacity=W,
         input_parcels=parcels
     )
+

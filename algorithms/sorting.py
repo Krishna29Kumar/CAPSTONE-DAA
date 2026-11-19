@@ -102,3 +102,4 @@ def sort_parcels_with_metrics(parcels: List[Parcel]) -> Tuple[List[Parcel], floa
     sorted_list = merge_sort(parcels)
     elapsed_time = time.perf_counter() - start_time
     return sorted_list, elapsed_time
+

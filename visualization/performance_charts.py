@@ -131,3 +131,4 @@ def generate_knapsack_capacity_impact_chart(
         fig.savefig(save_path, dpi=300, bbox_inches="tight")
 
     return fig
+

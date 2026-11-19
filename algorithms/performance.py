@@ -244,3 +244,4 @@ def run_benchmarks(reports_dir: str = "reports") -> Dict[str, Any]:
 
 if __name__ == "__main__":
     run_benchmarks()
+

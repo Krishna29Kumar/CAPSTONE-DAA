@@ -168,3 +168,4 @@ To confirm the $O(n \cdot W)$ pseudo-polynomial nature of the Knapsack DP, item 
 ## Conclusion
 
 The Mini-Courier Planner provides a rigorous, demonstrable synthesis of classic algorithmic techniques applied to an authentic engineering problem. The project demonstrates the distinction between theoretical complexity and empirical execution, highlights the trade-offs between exact DP solutions and heuristic approximations, and prepares students for academic evaluation and industry software design.
+

@@ -6,3 +6,4 @@ from .parcel import Parcel
 from .delivery_graph import DeliveryGraph
 
 __all__ = ["Parcel", "DeliveryGraph"]
+

@@ -15,3 +15,4 @@ __all__ = [
     "generate_scaling_line_chart",
     "generate_knapsack_capacity_impact_chart",
 ]
+

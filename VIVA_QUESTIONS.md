@@ -200,3 +200,4 @@ $$\text{dp}[i][w] = \begin{cases} \text{dp}[i-1][w] & \text{if } w_i > w \\ \max
 
 #### Q35. What was the most challenging part of this capstone assignment, and how did you solve it?
 **Answer:** Ensuring seamless mathematical and data integration between disparate algorithmic paradigms—specifically mapping the discrete subset of parcels chosen by Knapsack DP to geographic graph nodes, and using Dijkstra shortest-path sub-routes to calculate accurate edge costs for the Nearest Neighbor TSP tour without duplicate stops or missing return legs.
+

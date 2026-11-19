@@ -435,3 +435,4 @@ elif menu_choice == "ℹ️ Project Information & Viva Notes":
     - **Why is 0/1 Knapsack pseudo-polynomial?** Its runtime depends on the numeric magnitude of vehicle capacity $W$. In terms of input bits $b = \log_2 W$, the runtime is $O(n \cdot 2^b)$, which is exponential in input size.
     - **Does Nearest Neighbor guarantee the optimal TSP tour?** No. It is a greedy heuristic that can make locally optimal choices leading to expensive return legs. It provides a practical polynomial-time approximation.
     """)
+

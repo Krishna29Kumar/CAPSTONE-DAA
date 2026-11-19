@@ -63,3 +63,4 @@ class Parcel:
             f"Parcel({self.parcel_id}, {self.customer_name}, loc='{self.delivery_location}', "
             f"wt={self.weight}kg, prio={self.priority}, dline={self.delivery_deadline}h, val=₹{self.value:.0f})"
         )
+
